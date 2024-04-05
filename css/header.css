@@ -1,0 +1,37 @@
+.header {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+}
+.header__logo {
+    width: 120px;
+}
+.header__cart {
+    color: black;
+    font-size: 50px;
+}
+.header__cart svg {
+    transition: all 0.3s ease-in-out;
+}
+.header__cart svg:hover {
+    fill: var(--orange);
+}
+
+@media (width >= 620px) {
+    .header {
+        top: 40px;
+    }
+    .header__logo {
+        width: 164px;
+    }
+}
